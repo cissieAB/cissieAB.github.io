@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xinxin (Cissie) Mei</title>
+<meta name="description" content="Xinxin (Cissie) Mei — Staff Computer Scientist at Jefferson Lab. HPC systems, eBPF network telemetry, scientific data streaming, GPU performance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --fg:#1d1d1f; --muted:#5f6368; --rule:#e4e1d9;
+  --accent:#9a3412; --accent-soft:#fdf1e9; --card:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141413; --fg:#ece9e2; --muted:#a3a09a; --rule:#2d2c29;
+    --accent:#f0a374; --accent-soft:#2a1d15; --card:#1b1b1a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141413; --fg:#ece9e2; --muted:#a3a09a; --rule:#2d2c29;
+  --accent:#f0a374; --accent-soft:#2a1d15; --card:#1b1b1a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);z-index:5}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto}
+nav .brand{font-family:Fraunces,serif;font-weight:600;color:var(--fg);margin-right:auto;white-space:nowrap}
+nav a{color:var(--muted);font-size:14px;white-space:nowrap}
+nav a:hover{color:var(--fg)}
+header{padding:72px 0 40px}
+header h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(36px,6vw,52px);line-height:1.1;margin:0 0 10px;letter-spacing:-.01em}
+header .role{font-size:18px;color:var(--muted);margin:0 0 24px}
+header .lede{font-size:18px;max-width:640px;margin:0 0 28px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{font-size:14px;padding:6px 14px;border:1px solid var(--rule);border-radius:999px;color:var(--fg);background:var(--card)}
+.links a{display:inline-flex;align-items:center;gap:7px}
+.links svg{width:14px;height:14px;fill:currentColor;flex:none}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+section{padding:40px 0;border-top:1px solid var(--rule)}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:26px;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:18px}
+.card h3{font-size:16px;margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.tag{display:inline-block;font:12px/1 "JetBrains Mono",monospace;color:var(--accent);background:var(--accent-soft);padding:4px 8px;border-radius:4px;margin-bottom:10px}
+.pub{padding:14px 0;border-bottom:1px dashed var(--rule)}
+.pub:last-child{border-bottom:0}
+.pub .t{font-weight:600}
+.pub .m{color:var(--muted);font-size:14.5px}
+.pub .m b{color:var(--fg);font-weight:600}
+.pub .v{font:12px "JetBrains Mono",monospace;color:var(--accent);margin-right:8px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:10px 0}
+.timeline .yr{font:13px "JetBrains Mono",monospace;color:var(--muted);padding-top:3px}
+.timeline b{font-weight:600}
+.timeline span{color:var(--muted)}
+footer{padding:32px 0 56px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule)}
+@media (max-width:560px){
+  .timeline li{grid-template-columns:1fr;gap:2px}
+  header{padding:48px 0 28px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <span class="brand">Xinxin Mei</span>
+  <a href="#publications">Publications</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div></nav>
+
+<main class="wrap">
+<header>
+  <h1>Xinxin (Cissie) Mei</h1>
+  <p class="role">Staff Computer Scientist · Thomas Jefferson National Accelerator Facility (JLab)</p>
+  <p class="lede">A systems researcher working across HPC, networking, storage, and GPUs — from academia to industry to a DOE national lab. I study how large computing systems really behave, and use what I learn to make them faster and more efficient.</p>
+  <div class="links">
+    <a href="https://github.com/cissieAB" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+    <a href="https://scholar.google.com/citations?user=1qnQTcEAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>Google Scholar</a>
+    <a href="https://www.linkedin.com/in/xinxinmei/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a>
+    <a href="mailto:xmei@jlab.org"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Email</a>
+  </div>
+</header>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <div class="pub">
+    <div class="t"><a href="https://doi.org/10.1145/3731599.3767445" target="_blank" rel="noopener">eCounter: Inline Per‑IP Network Monitoring at Millisecond Resolution via eBPF</a></div>
+    <div class="m"><span class="v">SC'25 Workshops · INDIS</span><b>X. Mei</b>, J. Chen, A. Singh, I. Baldin, D. Lawrence</div>
+  </div>
+  <div class="pub">
+    <div class="t"><a href="https://arxiv.org/abs/1509.02308" target="_blank" rel="noopener">Dissecting GPU Memory Hierarchy through Microbenchmarking</a></div>
+    <div class="m"><span class="v">IEEE TPDS 2017</span><b>X. Mei</b>, X. Chu</div>
+  </div>
+  <div class="pub">
+    <div class="t"><a href="https://doi.org/10.1109/INFOCOM.2017.8057205" target="_blank" rel="noopener">Energy Efficient Real‑Time Task Scheduling on CPU‑GPU Hybrid Clusters</a></div>
+    <div class="m"><span class="v">IEEE INFOCOM 2017</span><b>X. Mei</b>, X. Chu, H. Liu, Y.‑W. Leung, Z. Li</div>
+  </div>
+  <div class="pub">
+    <div class="t"><a href="https://doi.org/10.1145/2525526.2525852" target="_blank" rel="noopener">A Measurement Study of GPU DVFS on Energy Conservation</a></div>
+    <div class="m"><span class="v">SOSP Workshops 2013 · HotPower</span><b>X. Mei</b>, L. S. Yung, K. Zhao, X. Chu</div>
+  </div>
+  <div class="pub">
+    <div class="m">Full list on <a href="https://scholar.google.com/citations?user=1qnQTcEAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="grid">
+    <div class="card"><span class="tag">eBPF · telemetry</span><h3>Fine‑grained network telemetry</h3><p>eCounter / eCenter: inline per‑flow monitoring at millisecond resolution with eBPF on 100 Gbps NICs, plus real‑time visualization.</p></div>
+    <div class="card"><span class="tag">storage · streaming</span><h3>DAOS for scientific streaming</h3><p>Characterizing DAOS as a burst buffer for high‑rate experimental data — interfaces, tail latency, and cross‑platform behavior.</p></div>
+    <div class="card"><span class="tag">GPU · HPC</span><h3>GPU performance &amp; variability</h3><p>Benchmarking GPU performance and energy efficiency, and understanding variability across large clusters.</p></div>
+    <div class="card"><span class="tag">scheduling</span><h3>HPC scheduling &amp; simulation</h3><p>Heterogeneous cluster scheduling and job‑scheduling simulation for shared scientific computing facilities.</p></div>
+    <div class="card"><span class="tag">AI4NP</span><h3>AI surrogate models</h3><p>Contributions to the PHASM toolkit and AI for nuclear physics workflows.</p></div>
+    <div class="card"><span class="tag">DPU · SmartNIC</span><h3>Programmable infrastructure</h3><p>BlueField DPU testbeds for in‑network observability and offloaded data services.</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="timeline">
+    <li><div class="yr">Present</div><div><b>Staff Computer Scientist</b>, Jefferson Lab — EPSCI group<br><span>PI of LDRD projects on DAOS storage and eCenter telemetry.</span></div></li>
+    <li><div class="yr">Earlier</div><div><b>Performance Engineer</b>, NVIDIA<br><span>Performance engineering on Selene, a top‑5 TOP500 supercomputer.</span></div></li>
+    <li><div class="yr">2016</div><div><b>Ph.D. in Computer Science</b>, Hong Kong Baptist University</div></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Thomas Jefferson National Accelerator Facility · Newport News, Virginia<br>
+  Email: <a href="mailto:xmei@jlab.org">xmei@jlab.org</a> · GitHub: <a href="https://github.com/cissieAB" target="_blank" rel="noopener">@cissieAB</a></p>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Xinxin Mei</div></footer>
+</body>
+</html>
